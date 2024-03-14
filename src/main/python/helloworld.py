@@ -13,4 +13,4 @@ def helloworld(out):
 
     out.write("Hello world of Python Anjali\n")
 # Call the function with a file object
-    helloworld(sys.stdout)
+helloworld(sys.stdout)
