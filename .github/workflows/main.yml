@@ -2,7 +2,7 @@ name: PyBuilder Workflow
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
       types : [opened, synchronised, reopened]
@@ -19,7 +19,7 @@ jobs:
       - name: Install pylint
         run: pip install pylint
       - name: Run pylint
-        run: pylint src/main/python/helloworld.py
+run: pylint src/main/python/helloworld.py
 build_and_test:
     runs-on: ubuntu-latest
     steps:
