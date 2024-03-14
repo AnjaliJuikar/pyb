@@ -2,10 +2,10 @@ name: PyBuilder Workflow
 on:
   push:
     branches:
-      - main
+      main
   pull_request:
     branches:
-      - main      
+      types : [opened , synchronised , reopened)    ]
 jobs:
   lint:
     runs-on: ubuntu-latest
